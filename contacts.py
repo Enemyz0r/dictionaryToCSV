@@ -14,7 +14,7 @@ while Flag:
     contact = input("Please enter name and phone number (eg. John 555-789134): ")
     dictionary = dict(x.split() for x in contact.splitlines())
     choice = input("Would you like to further add numbers?  (y/n)")
-    with open('contacts.csv', 'a') as csv_file:
+    with open('dicttocsv.csv', 'a') as csv_file:
             writer = csv.writer(csv_file)
             for key, value in dictionary.items():
                 writer.writerow([key, value])
